@@ -237,17 +237,18 @@ document.addEventListener('keyup', function(event) {
 
 function saveSettings() {
     const panicKey = document.getElementById('panicKey').value || 'Ctrl+Shift+P';
-    const panicUrl = document.getElementById('panicUrl').value || 'https://www.desmos.com/scientific';
+    const panicUrl = 'https://www.coolmathgames.com'; // Set the panicUrl to YouTube by default
     
     localStorage.setItem('panicKey', panicKey);
     localStorage.setItem('panicUrl', panicUrl);
     
-    panicSuccessMessage.textContent = "panic mode settings saved, refreshing page";
+    panicSuccessMessage.textContent = "Panic mode settings saved, refreshing page";
     panicSuccessMessage.style.display = "block";
     setTimeout(function() {
         window.location.reload();
     }, 1000);
 }
+
 
 // open blank
 document.addEventListener('DOMContentLoaded', () => {
