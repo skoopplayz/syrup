@@ -76,7 +76,7 @@ genreDropdown.addEventListener('change', () => {
 genreDropdown.value = 'all';
 
 // cool typing
-const text = "games";
+const text = "sausages     bruh";
 const typingDelay = 500; 
 const initialDelay = 100; 
 const cursor = document.getElementById("cursor");
